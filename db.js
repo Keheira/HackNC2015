@@ -6,3 +6,12 @@ var connection = mysql.createConnection({
     password: 'flexingaak',
     port: '3306'
 });
+
+connection.conect(function(err){
+  if(err){
+    consolle.error('error connecting: ' + err.stack);
+    return;
+  }
+}
+
+module.exports = {db: mysql};

@@ -1,4 +1,6 @@
 branch-defaults:
+  Keheira:
+    environment: HackNC2015-dev
   master:
     environment: HackNC2015-dev
 global:

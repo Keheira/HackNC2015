@@ -12,5 +12,7 @@ angular.module('app',[])
       if(!$scope.login.pass){
         $scope.passreq = 'Password Required';
       }
+
+      connection.query('SELECT ' +  $scope.login.name + ' FROM users WHERE');
     }
   }])

@@ -2,6 +2,7 @@
     "name": "unknown",
     "version": "0.0.1",
     "private": true,
+    "description": "Application for safe electronic sell and trades",
     "dependencies":{
         "aws-sdk": "*",
         "knox": "*",
