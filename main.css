@@ -1,4 +1,6 @@
-#profpic{
-    border-radius: 10px;
-    border-color: transparent;
+.profpic{
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
 }
