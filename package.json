@@ -3,6 +3,9 @@
     "version": "0.0.1",
     "private": true,
     "description": "Application for safe electronic sell and trades",
+    "scripts": {
+      "start": "node ./bin/www"
+    },
     "dependencies":{
         "aws-sdk": "*",
         "knox": "*",

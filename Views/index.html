@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
     <head>
       <meta charset="utf-8">
         <title>Safe Exchange</title>
@@ -7,13 +7,29 @@
         <link href="css/bootstrap.min.css" /> rel="stylesheet" />
     </head>
     <body ng-controller="MainCtrl">
-        <divng-include src="header.url"></div>
+      <nav class="navbar navbar-default">
+           <div class="container">
+               <div class="navbar-header">
+                   <a class="navbar-brand" href="/">Angular Routing Example</a>
+               </div>
+
+               <ul class="nav navbar-nav navbar-right">
+                   <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                   <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+                   <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+               </ul>
+           </div>
+           </nav>
+        <div id="main">
+          <!-- Where content will be injected -->
+          <div ng-view></div>
+        </div>
         <footer>Created by Keheira and Avery</footer>
     <script src="lib/common/bootstrap.min.js"></script>
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular/angular-route.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="some.js"></script>
+    <script type="text/javascript" src="./Scripts/main.js"></script>
     </body>
 </html>
