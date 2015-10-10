@@ -1,14 +1,19 @@
 {
     "name": "unknown",
-    "description": "allow students to safely sell or trade electronic with their peers",
-    "contributors": [
-        "Keheira Henderson",
-        "Avery Bridges"
-    ],
     "version": "0.0.1",
+    "private": true,
     "dependencies":{
         "aws-sdk": "*",
         "knox": "*",
-        "mysql": "*"
+        "mysql": "*",
+        "body-parser": "*",
+        "cookie-parser": "*",
+        "debug": "*",
+        "express": "*",
+        "jade": "*",
+        "morgan": "*",
+        "serve-favicon": "*",
+        "mongodb": "*",
+        "monk": "*"
         }
 }

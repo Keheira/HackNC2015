@@ -1,25 +1,15 @@
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="main.css">
-    <!--    <script type="text/javascript" src="http://ajax.googleapis.com/
-ajax/libs/jquery/1.5/jquery.min.js"></script> -->
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="some.js"></script>
-    </head>
-    
-    
-    <body>
-        <div id="tabs">
+<div id="tabs">
             <a href="#" id="login" class="tabs log">Login</a>
             <a href="#" id="register" class="tabs sign">Register</a>
         </div>
         <div id="loginBox">
-            <form>
+            <form ng-controller="LoginCtrl">
                 <br/>
-                <h5>Username:</h5><input type="text" name="Username">
-                <h5>Password:</h5><input type="password" name="Password">
-                <button>Login</button>
+                <h5>Username:</h5><input type="text" name="Username" ng-model="login.user">
+                <span ng-show="namereq">{{namereq}}</span>
+                <h5>Password:</h5><input type="password" name="Password" ng-model="login.pass">
+                <span ng-show="passreq">{{passreq}}</span>
+                <button ng-click="validate()">Login</button>
             </form>
         </div>
         <div id="registerBox">
@@ -32,8 +22,3 @@ ajax/libs/jquery/1.5/jquery.min.js"></script> -->
                 <button>Register</button>
             </form>
         </div>
-    
-    </body>
-
-
-</html>
