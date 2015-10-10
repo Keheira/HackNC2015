@@ -1,0 +1,14 @@
+{
+    "name": "unknown",
+    "description": "allow students to safely sell or trade electronic with their peers",
+    "contributors": [
+        "Keheira Henderson",
+        "Avery Bridges"
+    ],
+    "version": "0.0.1",
+    "dependencies":{
+        "aws-sdk": "*",
+        "knox": "*",
+        "mysql": "*"
+        }
+}

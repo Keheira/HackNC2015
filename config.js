@@ -4,6 +4,10 @@ var knoxClient = {
     bucket: ''
 }
 
+var aws = {
+    key: '',
+    secret: ''
+}
 module.exports = {
     knoxClient: knoxClient
 }
