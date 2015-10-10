@@ -1,11 +1,20 @@
-<div>
-    <img id="profpic" align="left" src="me.jpg"/>
-    <label>Name: </label><br />
-    <label>Email: </label><br />
-    <label>Location: </label><br >
-    <label><a>Add account</a></label>
-</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Safe Exchange</title>
+        <link href="main.css" >
+    </head>
+    <body>
+        <img id="profpic" src="me.jpg"/>
+        <div id="userInfo">
+            <label>Name: {{user.name}}</label><br />
+            <label>Email: {{user.email}}</label><br />
+            <label>Location: {{user.location))</label><br >
+            <label><a ng-click="update()">Add account</a></label>
+        </div>
 <br />
 <div>
     <button id="profsave" type="submit">Save</button>
 </div>
+    </body>
+</html>
