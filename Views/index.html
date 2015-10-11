@@ -2,28 +2,25 @@
 <html ng-app="app">
     <head>
       <meta charset="utf-8">
-        <title>Safe Exchange</title>
+        <title>{{title}}</title>
         <link href="main.css" >
-        <link href="css/bootstrap.min.css" /> rel="stylesheet" />
-    </head>
-    <body ng-controller="MainCtrl">
-      <nav class="navbar navbar-default">
-           <div class="container">
-               <div class="navbar-header">
-                   <a class="navbar-brand" href="/">Angular Routing Example</a>
-               </div>
+        <link href="css/bootstrap.min.css" rel="stylesheet" >
+      <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+</head>
 
-               <ul class="nav navbar-nav navbar-right">
-                   <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                   <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
-                   <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
-               </ul>
-           </div>
-           </nav>
-        <div id="main">
-          <!-- Where content will be injected -->
-          <div ng-view></div>
-        </div>
+<body  ng-controller="NavCtrl">
+
+  <div class="navbar">
+    <ul class="nav navbar-nav">
+      <li ng-class="navClass('home')"><a href='' ng-click="loadHome()">Home</a></li>
+      <li ng-class="navClass('login')"><a href='' ng-click="loadLogin()">Login/Register</a></li>
+      <li ng-class="navClass('contact')"><a href='' ng-click="loadContact()">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <div ng-view></div>>
         <footer>Created by Keheira and Avery</footer>
     <script src="lib/common/bootstrap.min.js"></script>
     <script src="lib/angular/angular.js"></script>

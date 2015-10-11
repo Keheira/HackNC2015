@@ -1,5 +1,7 @@
 var mysql = require('mysql');
 
+var db = {};
+
 var connection = mysql.createConnection({
     host: 'mydbinstance.cl5k3tw2xzvq.us-west-2.rds.amazonaws.com:3306',
     user: 'TeamFlex',
@@ -7,11 +9,11 @@ var connection = mysql.createConnection({
     port: '3306'
 });
 
-connection.conect(function(err){
+db.connection = connection.conect(function(err){
   if(err){
-    consolle.error('error connecting: ' + err.stack);
+    console.error('error connecting: ' + err.stack);
     return;
   }
 }
 
-module.exports = {db: mysql};
+exports = module.exports = db;

@@ -1,5 +1,4 @@
-angular.module('app',[])
-    .controller('LoginCtrl', ['$scope',function($scope){
+angular.controller('LoginCtrl', ['$scope',function($scope){
     $scope.login = {};
     $scope.validate = function(){
       console.log($scope.login);
