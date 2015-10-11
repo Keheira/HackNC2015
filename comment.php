@@ -10,25 +10,23 @@ if(isset($_POST['email'])){
     
     $email_message = "Form details below.\n\n";
  
-     
- 
-    function clean_string($string) {
-      $bad = array("content-type","bcc:","to:","cc:","href");
-      return str_replace($bad,"",$string);
-    }
+     $body = <<<EOD
+<br /><hr><br />
+Name: $name<br />
+Email: $email_from<br />
+Comment: $comment<br />
+EOD;
     
-    $email_message .= "Name: ".clean_string($name)."\n";
-    $email_message .= "Email: ".clean_string($email_from)."\n";
-    $email_message .= "Comment: ".clean_string($comment)."\n";
+    $headers = "Form: ".$email_from."\r\n";
+    $headers .= "Coontent-type: text/html\r\n";
+    $success = mail($email_to, $email_subject, $body, $headers);
     
-    $headers = "Form: ".$email_from."\r\n".
-        "Reply-To: ".$email_from."\r\n".
-        "X-Mailer: PHP/".phpversion();
-    @mail($email_to, $email_subject, $email_message, $headers);
+    $theResults = <<EOD
+<div>
+<div align="left">Thank you for you comment.</div>
+<a href="index.html">Go Home</a>
+EOD;
+        
+    echo "$theResults";
 
-?>
-
-Thanks for the message!!!!!
-<?php
-}
 ?>
