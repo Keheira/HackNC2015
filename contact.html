@@ -4,22 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
 
     <title>STX</title>
-
-    <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="main.css" rel="stylesheet">
   </head>
 
   <body>
-
-    <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -33,13 +26,13 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
 <!--            <li><a href="#about">About</a></li>-->
-            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="#">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="Login-Register.html">Login/Register</a></li>
-            <li><a href="logout.html">Logout</a></li>
+            <li ><a href="Login-Register.html">Login/Register</a></li>
+<!--            <li><a href="./pages/logout.html">Logout</a></li>-->
           </ul>
         </div>
       </div>
@@ -47,17 +40,19 @@
 
     <div class="container">
       <div class="jumbotron">
-        <h1>Welcome</h1>
-        <p>Welcome to the <b>S</b>afe <b>T</b>echnology e<b>X</b>change or STX.<br /> We have created a better and safer way to trade technology for college students.<br /> We promise to make sure you are always meeting your respective buy/seller in a safe place and that there is a reduced risk of scamming.</p>
+          <h1>Contact Us</h1>
+        <form name="contactForm" action="comment.php" method="POST">
+                    <br/>
+                    <h5>Name:</h5><input type="text" name="name" required>
+                    <h5>email:</h5><input type="email" name="email" required>
+            <h5>comment:</h5><input type="text" name="comment" required>
+                    <button>Submit</button>
+                </form>
       </div>
 
-    </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="bootstrap.min.js"></script>
+      <script src="scripts/some.js"></script>
   </body>
 </html>

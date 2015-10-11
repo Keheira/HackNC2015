@@ -8,6 +8,15 @@ if(isset($_POST['email'])){
     $email_from = $_POST['email'];
     $comments = $_POST['comment'];
     
+    $email_message = "Form details below.\n\n";
+ 
+     
+ 
+    function clean_string($string) {
+      $bad = array("content-type","bcc:","to:","cc:","href");
+      return str_replace($bad,"",$string);
+    }
+    
     $email_message .= "Name: ".clean_string($name)."\n";
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Comment: ".clean_string($comment)."\n";

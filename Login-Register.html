@@ -8,8 +8,8 @@
     <meta name="author" content="">
 
     <title>STX</title>
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/main.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
   </head>
 
   <body>
@@ -26,7 +26,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="../index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
 <!--            <li><a href="#about">About</a></li>-->
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -40,18 +40,33 @@
 
     <div class="container">
       <div class="jumbotron">
-        <form name="contactForm" action="./scripts/comment.php" method="POST">
+        <div id="tabs">
+                <a href="#" id="login" class="tabs log">Login</a>
+                <a href="#" id="register" class="tabs sign">Register</a>
+            </div><br />
+            <div id="loginBox">
+                <form action="login.php" method="POST">
                     <br/>
-                    <h5>Name:</h5><input type="text" name="name" required>
-                    <h5>email:</h5><input type="email" name="email" required>
-            <h5>comment:</h5><input type="text" name="comment" required>
-                    <button>Submit</button>
+                    <h5>Username:</h5><input type="text" name="username" required>
+                    <h5>Password:</h5><input type="password" name="password" required>
+                    <button>Login</button>
                 </form>
+            </div>
+            <div id="registerBox" >
+                <form action="register.php" method="POST">
+                    <br/>
+<!--                    <h5>Name:</h5><input type="text" name="name" required>-->
+                    <h5>Username:</h5><input type="text" name="username" required>
+                    <h5>Password:</h5><input type="text" name="password" required>
+                    <h5>Email:</h5><input type="email" name="email" required>
+                    <button>Register</button>
+                </form>
+            </div>
       </div>
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-      <script src="../scripts/some.js"></script>
+    <script src="bootstrap.min.js"></script>
+      <script src="scripts/some.js"></script>
   </body>
 </html>
