@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-      <meta http-equiv="refresh" content="10;url=https://github.com/Keheira/HackNC2015" />
 
     <title>STX</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -41,8 +40,18 @@
 
     <div class="container">
       <div class="jumbotron">
-          <h1>Thank you for your service!!!</h1>
-        </div>
+        <form name="contactForm" action="scripts/comment.php" method="POST">
+                    <br/>
+                    <h5>Name:</h5><input type="text" name="name" required>
+                    <h5>email:</h5><input type="email" name="email" required>
+            <h5>comment:</h5><input type="text" name="comment" required>
+                    <button>Submit</button>
+                </form>
       </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+      <script src="../scripts/some.js"></script>
   </body>
 </html>
