@@ -1,10 +1,10 @@
 branch-defaults:
-  master:
-    environment: Default-Environment
+  Real:
+    environment: hacknc20152-env
 global:
-  application_name: My First Elastic Beanstalk Application
+  application_name: HackNC20152
   default_ec2_keyname: null
-  default_platform: 64bit Amazon Linux 2015.03 v2.0.1 running Node.js
+  default_platform: PHP 5.4
   default_region: us-west-2
   profile: eb-cli
   sc: git
