@@ -23,9 +23,35 @@ margin-left:8px;
 #select{
     background-color: aliceblue;
 }
-.profpic{
-    border-color: green;
+#profpic{
+    border-color: transparent;
     border-width: 10px;
     border-style: solid;
     border-radius: 50%;
+}
+
+
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
+
+#selloptions{
+    float: left;
+    width: auto;
+    height: auto;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+}
+.woah{
+    position: relative;
+    bottom: 10px;
+}
+.jumbotron{
+    height: 600px;
+    position: relative;
 }
