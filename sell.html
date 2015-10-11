@@ -46,19 +46,20 @@
 
     <div class="container">
       <div class="jumbotron">
-    <div style="text-align:center;" ng-if="trade">
+    <div style="text-align:center;" ng-if="trade" class="woah">
         <h1 style="text-align:center">Sell</h1>
         <ul id="selloptions">
         <li><a>Trade</a></li>
         <li><a>Sell</a></li>
     </ul>
         <div class="row">
-            <input type="file" nv-file-select="" uploader="uploader" multiple  /><br/> Single
-                    <input type="file" nv-file-select="" uploader="uploader" />
+            <br/>
+            <input type="file" nv-file-select="" uploader="uploader" multiple/> <br/>
+                    <input type="file" nv-file-select="" uploader="uploader" single/>
                 </div>
 <div class="col-md-9" style="margin-bottom: 40px">
                 <h3>Upload queue</h3>
-                    <p>Queue length: {{ uploader.queue.length }}</p>
+                    <p>Queue length: 0<!--{{ uploader.queue.length }}--></p>
                 <table class="table">
                         <thead>
                             <tr>
@@ -69,7 +70,7 @@
                                 <th>Actions</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <!--<tbody>
                             <tr ng-repeat="item in uploader.queue">
                                 <td><strong>{{ item.file.name }}</strong></td>
                                 <td ng-show="uploader.isHTML5" nowrap>{{ item.file.size/1024/1024|number:2 }} MB</td>
@@ -92,7 +93,7 @@
                                     </button>
                                 </td>
                             </tr>
-                        </tbody>
+                        </tbody> -->
                     </table>
 
                     <div>
