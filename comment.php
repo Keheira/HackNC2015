@@ -1,5 +1,9 @@
 <?php
 
+echo "YAY submission!!";
+$newurl = "https://github.com/Keheira/HackNC2015";
+header('location: '.$newurl);
+/*it works on the low
 if(isset($_POST['email'])){
     $email_to = "keheirah@gmail.com";
     $email_subject = "STX contact form";
@@ -27,6 +31,6 @@ EOD;
 <a href="index.html">Go Home</a>
 EOD;
         
-    echo "$theResults";
+    echo "$theResults";*/
 
 ?>
