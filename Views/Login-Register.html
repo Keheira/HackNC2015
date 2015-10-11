@@ -1,9 +1,9 @@
 <div id="loginBox">
     <form ng-controller="LoginCtrl">
         <br/>
-        <h5>Username:</h5><input type="text" name="Username" ng-model="login.user">
+        <h5>Username:</h5><input type="text" name="Username" ng-model="login.user" required>
         <span ng-show="namereq">{{namereq}}</span>
-        <h5>Password:</h5><input type="password" name="Password" ng-model="login.pass">
+        <h5>Password:</h5><input type="password" name="Password" ng-model="login.pass" required>
         <span ng-show="passreq">{{passreq}}</span>
         <button ng-click="validate()">Login</button>
     </form>
@@ -11,9 +11,9 @@
 <div id="registerBox">
     <form ng-controller="RegisterCtrl">
         <br/>
-        <h5>Name:</h5><input type="text" name="Name">
-        <h5>Username:</h5><input type="text" name="Username">
-        <h5>Password:</h5><input type="text" name="Password">
+        <h5>Name:</h5><input type="text" name="Name" required>
+        <h5>Username:</h5><input type="text" name="Username" required>
+        <h5>Password:</h5><input type="text" name="Password" required>
         <h5>Email:</h5><input type="email" name="Email">
         <button>Register</button>
     </form>
